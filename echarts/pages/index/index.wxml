@@ -1,0 +1,23 @@
+
+<view style="text-align: center;font-family:'黑体'">全国疫情实时追踪</view>
+<view class="item">
+  <view class="item-content" style="color:red">{{confirm}}</view>
+  <view class="item-content">{{suspect}}</view>
+  <view class="item-content"style="color:green">{{heal}}</view>
+  <view class="item-content"style="color:gray">{{dead}}</view>
+  <view class="txt">累计确诊</view>
+  <view class="txt">剩余疑似</view>
+  <view class="txt">累计治愈</view>
+  <view class="txt">累计死亡</view>
+</view>
+<view class="time">截至{{time}} | 来源:各地区卫健委</view>
+
+<view style="width:100%;height:350px" class="box">
+   <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+</view>
+<view style="width:100%;height:300px" class="box2">
+  <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec2 }}"></ec-canvas>
+</view>
+<view style="width:100%;height:300px" class="box3">
+  <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec3 }}"></ec-canvas>
+</view>
